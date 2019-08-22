@@ -9,8 +9,11 @@
   font-style: normal;
   font-weight: normal;
 }
-.body {
+.body,
+html {
   font-family: 'Poppins', Poppins Family;
+  margin: 0;
+  padding: 0;
 }
 /*** Variables  ***/
 @padding-site {
@@ -25,7 +28,6 @@
 /*** Container ***/
 .container {
   min-width: 1920px;
-  max-width: 1172px;
 }
 /*** header ***/
 .header {
@@ -37,7 +39,6 @@
 /*** TOP ***/
 .top {
   width: 1920px;
-  min-width: 1172px;
   height: 83px;
   background: rgba(0, 0, 0, 0.5);
   margin: 13px 0 0 0;
@@ -131,8 +132,7 @@ form {
 }
 /*** MENU ***/
 .menu-top {
-  min-width: 1920px;
-  max-width: 1172px;
+  width: 1920px;
   height: 83px;
   position: absolute;
   margin: 96px 0 0 0;
@@ -245,4 +245,139 @@ form {
 .ssocial-div:hover {
   border: 5px solid gray;
   background-color: gainsboro;
+}
+/*** about-us ***/
+.about-us {
+  height: 338px;
+  width: 1080px;
+  margin: 81px auto;
+}
+.about-us .about-us-text {
+  height: 338px;
+  width: 540px;
+}
+.about-us .about-us-text .about-us-h2 {
+  width: 175px;
+  height: 36px;
+  color: #f44336;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 14px 62px;
+}
+.about-us .about-us-text .about-us-p {
+  width: 398px;
+  height: 215px;
+  color: #999999;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin: 14px auto;
+}
+.about-us .about-us-img {
+  background: url(../img/1.png) no-repeat;
+  height: 338px;
+  width: 540px;
+}
+/*** services ***/
+.services {
+  width: 100%;
+  height: 762px;
+  background-color: #f7f7f7;
+  padding: 92px 0 0 0;
+}
+.services .services-h1 {
+  width: 150px;
+  height: 36px;
+  color: #f44336;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0 auto;
+}
+.services .services-block {
+  width: 900px;
+  height: 540px;
+  margin: 90px auto;
+}
+.services .services-block .services-left {
+  text-align: right;
+}
+.services .services-block .services-right {
+  text-align: left;
+}
+.services .services-block .services-h3-active {
+  width: 282px;
+  height: 18px;
+  color: #f44336;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  margin: 0 0 18px 0;
+}
+.services .services-block .services-h3 {
+  width: 282px;
+  height: 18px;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  margin: 0 0 18px 0;
+}
+.services .services-block .services-p {
+  width: 282px;
+  height: 60px;
+  color: #999999;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  margin: 0 0 86px 0;
+}
+.services-circles {
+  margin: 0 0 80px 0;
+}
+.services-circles .services-circle {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  margin: 0 auto;
+}
+.services-circles .circle1 {
+  border: 1px solid #acacac;
+  background: #f44336 url(../img/branch.png) no-repeat 42px 37px;
+}
+.services-circles .circle2,
+.services-circles .circle3,
+.services-circles .circle4,
+.services-circles .circle5,
+.services-circles .circle6 {
+  border: 1px solid #acacac;
+}
+.services-circles .circle2 {
+  background: #e1e1e1 url(../img/arrow-up.png) no-repeat 39px 37px;
+}
+.services-circles .circle3 {
+  background: #e1e1e1 url(../img/$.png) no-repeat 43px 37px;
+}
+.services-circles .circle4 {
+  background: #e1e1e1 url(../img/home.png) no-repeat 37px 39px;
+}
+.services-circles .circle5 {
+  background: #e1e1e1 url(../img/poll.png) no-repeat 39px 40px;
+}
+.services-circles .circle6 {
+  background: #e1e1e1 url(../img/settings.png) no-repeat 39px 40px;
 }

@@ -1,296 +1,422 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: "Poppinsregular.ttf";
-    src: url('fonts/Poppinsregular.ttf');
-    font-style: normal;
-    font-weight: normal;
-}
-
-.body {
-    font-family: 'Poppins', Poppins Family;
-}
-
-
-/*** Variables  ***/
-
-@widthAll: 1920px;
-@widthCentralBlock: 1172px;
-@padding-site {
-    padding-left: 374px;
-    padding-right: 374px;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/*** Container ***/
-
-.container {
-    min-width: @widthAll;
-    max-width: @widthCentralBlock;
-}
-
-
-/*** header ***/
-
-.header {
-    width: @widthAll;
-    height: 725px;
-    background-image: url(../img/2.png);
-    position: relative;
-}
-
-
-/*** TOP ***/
-
-.top {
-    width: @widthAll;
-    min-width: @widthCentralBlock;
-    height: 83px;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 13px 0 0 0;
-    position: absolute;
-}
-
-.top-content {
-    width: @widthAll - 950px;
-    margin: 0 auto;
-    padding: 25px 0 0 0;
-    height: 83px;
-}
-
-.logo {
-    display: block;
-    width: 169px;
-    height: 16px;
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 22.36px;
-    letter-spacing: 0.77px;
-    font-family: Poppins;
-}
-
-.logo2 {
-    display: block;
-    width: 171px;
-    height: 18px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 22.36px;
-    text-transform: uppercase;
-    letter-spacing: 32px;
-}
-
-.top-contact {
-    width: 195px;
-    height: 30px;
-    float: left;
-    margin: 5px 0 0 0;
-}
-
-.fas {
-    width: 30px;
-    height: 25px;
-    color: white;
-    display: block;
-    float: left;
-    font-size: 20px;
-    margin: 2px 5px 0 0;
-    text-align: center;
-}
-
-.phone {
-    width: 160px;
-    height: 12px;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 22.36px;
-    letter-spacing: 0.36px;
-    float: left;
-    font-family: "Roboto Condensed";
-}
-
-form {
-    position: relative;
-    width: 208px;
-    margin: 0 auto;
-    outline: 1px solid #ffffff;
-}
-
-.search input {
-    width: 168px;
-    height: 38px;
-    padding-left: 10px;
-    border: none;
-    outline: none;
-    background: none;
-    color: #ffffff;
-    font-family: "Roboto Condensed";
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 22.36px;
-    letter-spacing: 0.36px;
-}
-
-.search button {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 38px;
-    height: 38px;
-    border: none;
-    background: url(../img/search_icon.png) no-repeat 8px 8px;
-    cursor: pointer;
-    border-left: 1px solid #ffffff;
-}
-
-
-/*** MENU ***/
-
-.menu-top {
-    min-width: @widthAll;
-    max-width: @widthCentralBlock;
-    height: 83px;
-    position: absolute;
-    margin: 96px 0 0 0;
-}
-
-.menu {
-    float: left;
-    min-width: 700px;
-    margin: 32px 0 0 620px;
-}
-
-.menu-list {
-    list-style-type: none;
-    float: left;
-    padding: 0 0 0 20px;
-    height: 20px;
-}
-
-.menu-list-link {
-    font-family: "Roboto Condensed";
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 22.36px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.menu-list-link:hover {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.menu-list-link-active {
-    font-family: "Roboto Condensed";
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 22.36px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.menu-list-link-active:hover {
-    color: #000000;
-    text-decoration: none;
-}
-
-
-/*** TITLE ***/
-
-.header-h3 {
-    width: 117px;
-    height: 18px;
-    color: #ffffff;
-    font-family: "Roboto Condensed";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 0.18px;
-    display: block;
-    position: absolute;
-    margin: 309px 0 0 906px;
-}
-
-.header-hr {
-    width: 80px;
-    height: 2px;
-    background-color: #ffffff;
-    border: none;
-    display: block;
-    position: absolute;
-    margin: 359px 0 0 917px;
-}
-
-.header-title {
-    width: 600px;
-    height: 48px;
-    color: #ffffff;
-    font-family: Poppins;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0.6px;
-    margin: 421px 0 0 670px;
-    display: block;
-    position: absolute;
-}
-
-.social {
-    width: 208px;
-    height: 41px;
-    position: absolute;
-    margin: 544px 0 0 860px;
-}
-
-.social-div {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
-    margin: 0 12px 0 0;
-}
-
-.social-link {
-    width: 40px;
-    height: 40px;
-    display: block;
-}
-
-.fb {
-    background: url(../img/facebook-logo.png) no-repeat 13px 10px;
-}
-
-.twitter {
-    background: url(../img/twitter-logo-silhouette.png) no-repeat 11px 10px;
-}
-
-.rss {
-    background: url(../img/rss-feed-suscription-button-symbol-for-interface.png) no-repeat 13px 10px;
-}
-
-.vk {
-    background: url(../img/vk-social-network-logo.png) no-repeat 8px 13px;
-}
-
-
-.ssocial-div:hover {
-    border: 5px solid gray;
-    background-color: gainsboro;
-}
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            @font-face {
+                font-family: "Poppinsregular.ttf";
+                src: url('fonts/Poppinsregular.ttf');
+                font-style: normal;
+                font-weight: normal;
+            }
+            
+            .body,
+            html {
+                font-family: 'Poppins', Poppins Family;
+                margin: 0;
+                padding: 0;
+            }
+            /*** Variables  ***/
+            
+            @widthAll: 1920px;
+            @widthMin: 1366px;
+            @widthCentralBlock: 1172px;
+            @padding-site {
+                padding-left: 374px;
+                padding-right: 374px;
+            }
+            
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /*** Container ***/
+            
+            .container {
+                min-width: @widthAll;
+            }
+            /*** header ***/
+            
+            .header {
+                width: @widthAll;
+                height: 725px;
+                background-image: url(../img/2.png);
+                position: relative;
+            }
+            /*** TOP ***/
+            
+            .top {
+                width: @widthAll;
+                height: 83px;
+                background: rgba(0, 0, 0, 0.5);
+                margin: 13px 0 0 0;
+                position: absolute;
+            }
+            
+            .top-content {
+                width: @widthAll - 950px;
+                margin: 0 auto;
+                padding: 25px 0 0 0;
+                height: 83px;
+            }
+            
+            .logo {
+                display: block;
+                width: 169px;
+                height: 16px;
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 22.36px;
+                letter-spacing: 0.77px;
+                font-family: Poppins;
+            }
+            
+            .logo2 {
+                display: block;
+                width: 171px;
+                height: 18px;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22.36px;
+                text-transform: uppercase;
+                letter-spacing: 32px;
+            }
+            
+            .top-contact {
+                width: 195px;
+                height: 30px;
+                float: left;
+                margin: 5px 0 0 0;
+            }
+            
+            .fas {
+                width: 30px;
+                height: 25px;
+                color: white;
+                display: block;
+                float: left;
+                font-size: 20px;
+                margin: 2px 5px 0 0;
+                text-align: center;
+            }
+            
+            .phone {
+                width: 160px;
+                height: 12px;
+                color: #ffffff;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 22.36px;
+                letter-spacing: 0.36px;
+                float: left;
+                font-family: "Roboto Condensed";
+            }
+            
+            form {
+                position: relative;
+                width: 208px;
+                margin: 0 auto;
+                outline: 1px solid #ffffff;
+            }
+            
+            .search input {
+                width: 168px;
+                height: 38px;
+                padding-left: 10px;
+                border: none;
+                outline: none;
+                background: none;
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 22.36px;
+                letter-spacing: 0.36px;
+            }
+            
+            .search button {
+                position: absolute;
+                top: 0;
+                right: 0px;
+                width: 38px;
+                height: 38px;
+                border: none;
+                background: url(../img/search_icon.png) no-repeat 8px 8px;
+                cursor: pointer;
+                border-left: 1px solid #ffffff;
+            }
+            /*** MENU ***/
+            
+            .menu-top {
+                width: @widthAll;
+                height: 83px;
+                position: absolute;
+                margin: 96px 0 0 0;
+            }
+            
+            .menu {
+                float: left;
+                min-width: 700px;
+                margin: 32px 0 0 620px;
+            }
+            
+            .menu-list {
+                list-style-type: none;
+                float: left;
+                padding: 0 0 0 20px;
+                height: 20px;
+            }
+            
+            .menu-list-link {
+                font-family: "Roboto Condensed";
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 22.36px;
+                text-decoration: none;
+                color: #000000;
+            }
+            
+            .menu-list-link:hover {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            
+            .menu-list-link-active {
+                font-family: "Roboto Condensed";
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 22.36px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            
+            .menu-list-link-active:hover {
+                color: #000000;
+                text-decoration: none;
+            }
+            /*** TITLE ***/
+            
+            .header-h3 {
+                width: 117px;
+                height: 18px;
+                color: #ffffff;
+                font-family: "Roboto Condensed";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 48px;
+                letter-spacing: 0.18px;
+                display: block;
+                position: absolute;
+                margin: 309px 0 0 906px;
+            }
+            
+            .header-hr {
+                width: 80px;
+                height: 2px;
+                background-color: #ffffff;
+                border: none;
+                display: block;
+                position: absolute;
+                margin: 359px 0 0 917px;
+            }
+            
+            .header-title {
+                width: 600px;
+                height: 48px;
+                color: #ffffff;
+                font-family: Poppins;
+                font-size: 60px;
+                font-weight: 500;
+                line-height: 48px;
+                letter-spacing: 0.6px;
+                margin: 421px 0 0 670px;
+                display: block;
+                position: absolute;
+            }
+            
+            .social {
+                width: 208px;
+                height: 41px;
+                position: absolute;
+                margin: 544px 0 0 860px;
+            }
+            
+            .social-div {
+                float: left;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -khtml-border-radius: 50%;
+                margin: 0 12px 0 0;
+            }
+            
+            .social-link {
+                width: 40px;
+                height: 40px;
+                display: block;
+            }
+            
+            .fb {
+                background: url(../img/facebook-logo.png) no-repeat 13px 10px;
+            }
+            
+            .twitter {
+                background: url(../img/twitter-logo-silhouette.png) no-repeat 11px 10px;
+            }
+            
+            .rss {
+                background: url(../img/rss-feed-suscription-button-symbol-for-interface.png) no-repeat 13px 10px;
+            }
+            
+            .vk {
+                background: url(../img/vk-social-network-logo.png) no-repeat 8px 13px;
+            }
+            
+            .ssocial-div:hover {
+                border: 5px solid gray;
+                background-color: gainsboro;
+            }
+            /*** about-us ***/
+            
+            .about-us {
+                height: 338px;
+                width: 1080px;
+                margin: 81px auto;
+                .about-us-text {
+                    height: 338px;
+                    width: 540px;
+                    .about-us-h2 {
+                        width: 175px;
+                        height: 36px;
+                        color: #f44336;
+                        font-family: Poppins;
+                        font-size: 36px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        margin: 14px 62px;
+                    }
+                    .about-us-p {
+                        width: 398px;
+                        height: 215px;
+                        color: #999999;
+                        font-family: "Roboto Condensed";
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        letter-spacing: 0.12px;
+                        margin: 14px auto;
+                    }
+                }
+                .about-us-img {
+                    background: url(../img/1.png) no-repeat;
+                    height: 338px;
+                    width: 540px;
+                }
+            }
+            /*** services ***/
+            
+            .services {
+                width: 100%;
+                height: 762px;
+                background-color: #f7f7f7;
+                padding: 92px 0 0 0;
+                .services-h1 {
+                    width: 150px;
+                    height: 36px;
+                    color: #f44336;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+                .services-block {
+                    width: 900px;
+                    height: 540px;
+                    margin: 90px auto;
+                    .services-left {
+                        text-align: right;
+                    }
+                    .services-right {
+                        text-align: left;
+                    }
+                    .services-h3-active {
+                        width: 282px;
+                        height: 18px;
+                        color: #f44336;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.16px;
+                        margin: 0 0 18px 0;
+                    }
+                    .services-h3 {
+                        width: 282px;
+                        height: 18px;
+                        color: #000000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.16px;
+                        margin: 0 0 18px 0;
+                    }
+                    .services-p {
+                        width: 282px;
+                        height: 60px;
+                        color: #999999;
+                        font-family: "Roboto Condensed";
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0.12px;
+                        margin: 0 0 86px 0;
+                    }
+                }
+            }
+            
+            .services-circles {
+                margin: 0 0 80px 0;
+                .services-circle {
+                    width: 102px;
+                    height: 102px;
+                    border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -khtml-border-radius: 50%;
+                    margin: 0 auto;
+                }
+                .circle1 {
+                    border: 1px solid #acacac;
+                    background: #f44336 url(../img/branch.png) no-repeat 42px 37px;
+                }
+                .circle2,
+                .circle3,
+                .circle4,
+                .circle5,
+                .circle6 {
+                    border: 1px solid #acacac;
+                }
+                .circle2 {
+                    background: #e1e1e1 url(../img/arrow-up.png) no-repeat 39px 37px;
+                }
+                .circle3 {
+                    background: #e1e1e1 url(../img/$.png) no-repeat 43px 37px;
+                }
+                .circle4 {
+                    background: #e1e1e1 url(../img/home.png) no-repeat 37px 39px;
+                }
+                .circle5 {
+                    background: #e1e1e1 url(../img/poll.png) no-repeat 39px 40px;
+                }
+                .circle6 {
+                    background: #e1e1e1 url(../img/settings.png) no-repeat 39px 40px;
+                }
+            }
