@@ -250,9 +250,8 @@ body {
 .vk {
   background: url(../img/vk-social-network-logo.png) no-repeat 8px 13px;
 }
-.ssocial-div:hover {
-  border: 5px solid gray;
-  background-color: gainsboro;
+.social-link:hover {
+  opacity: 0.5;
 }
 /*** about-us ***/
 .about-us {
@@ -639,19 +638,26 @@ body {
   height: 50px;
   border-bottom: 1px solid #9e9e9e;
 }
-.news .feature-menu .news-arrows {
-  width: 50px;
+.news-arrows {
+    float: left;
+      width: 40px;
   height: 35px;
+    display: inline-block;
 }
 .news .feature-menu .news-arrow {
   width: 18px;
-  height: 35px;
+  height: 30px;
   color: #000000;
   font-family: Poppins;
   font-size: 34px;
   font-weight: 500;
   line-height: 28px;
-  display: inline;
+  float: left;
+    text-decoration: none;
+}
+.news .feature-menu .news-arrow:hover {
+     text-decoration: none;
+    color: #9e9e9e;
 }
 #accordionExample {
   margin: 34px 0 0 0;
@@ -771,7 +777,7 @@ body {
 }
 .team .team-gallery .team-gallery-content .team-gallery-h3 {
   width: 270px;
-  height: 16px;
+  height: 25px;
   color: #838383;
   font-family: "Roboto Condensed";
   font-size: 16px;
