@@ -651,17 +651,13 @@ body {
     outline: 1px solid gray;
     display: block;
     background: url(../img/right-arrow.png) no-repeat 180px 12px;
+    
 }
 
-.show-more-link {
-    width: 220px;
-    height: 40px;
-    text-decoration: none;
-    display: block;
-    margin: 0 auto;
-}
 
-.show-more-link:hover {
+
+.show-more:hover {
+    background-color: #f44336;
     text-decoration: none;
 }
 
