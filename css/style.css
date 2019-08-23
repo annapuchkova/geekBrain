@@ -57,7 +57,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-         border-bottom: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .header {
@@ -140,16 +140,18 @@ body {
     float: left;
     font-family: "Roboto Condensed";
 }
-.email-top {
 
-        color: #ffffff;
-        width: 160px;
+.email-top {
+    color: #ffffff;
+    width: 160px;
     height: 22px;
 }
+
 .email-top:hover {
-            color: #acacac;
+    color: #acacac;
     text-decoration: none;
 }
+
 .search-form {
     position: relative;
     width: 208px;
@@ -205,7 +207,6 @@ body {
     margin: 0 auto;
     padding: 100px 0 0 0;
     position: relative;
-
 }
 
 .menu-top {
@@ -213,7 +214,6 @@ body {
     height: 83px;
     position: absolute;
     margin: 0 auto;
-
 }
 
 .menu-top-pages {
@@ -261,9 +261,9 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-decoration: none;
-              border-style:solid;
-  border-width: 0px 0px 2px 0px;
-  padding:34px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    padding: 0 0 34px 0;
 }
 
 .menu-list-link-active:hover {
@@ -295,16 +295,14 @@ body {
     line-height: 22.36px;
     text-decoration: none;
     color: #000000;
-          border-style:solid;
-  border-width: 0px 0px 2px 0px;
-  padding:34px;
-
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    padding: 0 0 34px 0;
 }
 
 .menu-pages-list-link-active:hover {
     color: #8c8c8c;
     text-decoration: none;
-
 }
 
 .header-h3 {
@@ -672,11 +670,13 @@ body {
     outline: 1px solid gray;
     display: block;
     background: url(../img/right-arrow.png) no-repeat 180px 12px;
+    padding: 8px 0 0 40px;
 }
 
 .show-more:hover {
     background-color: #f44336;
     text-decoration: none;
+    color: #000000;
 }
 
 
@@ -1467,12 +1467,10 @@ body {
     padding: 0 0 0 16px;
     outline: 1px solid #9e9e9e;
     margin: 0 0 20px 0;
-
 }
 
 .contact .contact-content .contact-form button {
-    position:relative;
-
+    position: relative;
     width: 140px;
     height: 40px;
     border: none;
@@ -1488,9 +1486,11 @@ body {
 .contact .contact-content .contact-form button:hover {
     background-color: #acacac;
 }
+
 .message {
     clear: both;
 }
+
 .contact .contact-map {
     width: 1169px;
     height: 298px;
