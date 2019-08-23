@@ -116,7 +116,7 @@
                 font-family: "Roboto Condensed";
             }
             
-            form {
+            .search-form {
                 position: relative;
                 width: 208px;
                 margin: 0 auto;
@@ -148,6 +148,10 @@
                 background: url(../img/search_icon.png) no-repeat 8px 8px;
                 cursor: pointer;
                 border-left: 1px solid #ffffff;
+            }
+            
+            .search button:hover {
+                background-color: #acacac;
             }
             /*** MENU ***/
             
@@ -851,5 +855,59 @@
                             }
                         }
                     }
+                }
+            }
+            /*** subscribe ***/
+            
+            .subscribe {
+                width: 100%;
+                height: 313px;
+                background-image: url(../img/subscribe.png);
+                padding: 86px 0 0 0;
+                .subscribe-h1 {
+                    width: 430px;
+                    height: 48px;
+                    color: #ffffff;
+                    font-family: Poppins;
+                    font-size: 48px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+                .subscribe-form {
+                    width: 630px;
+                    height: 55px;
+                    position: relative;
+                    margin: 53px auto;
+                }
+                .subscribe-form input {
+                    width: 499px;
+                    height: 55px;
+                    background-color: #ffffff;
+                    float: left;
+                    color: #8e8e8e;
+                    font-family: "Roboto Condensed";
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 40px;
+                    border: none;
+                    padding: 0 0 0 30px;
+                }
+                .subscribe-form button {
+                    position: absolute;
+                    left: 510px;
+                    width: 119px;
+                    height: 55px;
+                    border: none;
+                    float: right;
+                    background-color: #f44336;
+                    color: #ffffff;
+                    font-family: "Roboto Condensed";
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 48px;
+                }
+                .subscribe-form button:hover {
+                    background-color: #acacac;
                 }
             }
