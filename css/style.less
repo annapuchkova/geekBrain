@@ -21,6 +21,7 @@
             @widthAll: 1920px;
             @widthMin: 1366px;
             @widthCentralBlock: 1172px;
+            @ColorH1: #f44336;
             @padding-site {
                 padding-left: 374px;
                 padding-right: 374px;
@@ -294,7 +295,7 @@
                     .about-us-h2 {
                         width: 175px;
                         height: 36px;
-                        color: #f44336;
+                        color: @ColorH1;
                         font-family: Poppins;
                         font-size: 36px;
                         font-weight: 500;
@@ -329,7 +330,7 @@
                 .services-h1 {
                     width: 150px;
                     height: 36px;
-                    color: #f44336;
+                    color: @ColorH1;
                     font-family: Poppins;
                     font-size: 36px;
                     font-weight: 500;
@@ -349,7 +350,7 @@
                     .services-h3-active {
                         width: 282px;
                         height: 18px;
-                        color: #f44336;
+                        color: @ColorH1;
                         font-family: Poppins;
                         font-size: 16px;
                         font-weight: 500;
@@ -418,5 +419,437 @@
                 }
                 .circle6 {
                     background: #e1e1e1 url(../img/settings.png) no-repeat 39px 40px;
+                }
+            }
+            /*** Gallery ***/
+            
+            .gallery {
+                width: 100%;
+                height: 790px;
+                padding: 92px 0 0 0;
+                .gallery-h1 {
+                    width: 210px;
+                    height: 37px;
+                    color: @ColorH1;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+                .gallery-table {
+                    width: 1200px;
+                    height: 480px;
+                    margin: 90px auto;
+                    .gallery-img {
+                        width: 271px;
+                        height: 376px;
+                    }
+                    .gallery-img1 {
+                        background-image: url(../img/accas.png);
+                    }
+                    .gallery-img2 {
+                        background-image: url(../img/raider.png);
+                    }
+                    .gallery-img3 {
+                        background-image: url(../img/ryse.png);
+                    }
+                    .gallery-img4 {
+                        background-image: url(../img/warcraft.png);
+                    }
+                    .gallery-img-a {
+                        width: 271px;
+                        height: 376px;
+                        display: block;
+                    }
+                    .gallery-img-a:hover {
+                        outline: 1px solid gray;
+                    }
+                    .gallery-p {
+                        width: 180px;
+                        height: 40px;
+                        color: #000000;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 23.94px;
+                        letter-spacing: 0.14px;
+                        letter-spacing: 0.14px;
+                        margin: 20px auto 7px;
+                        display: block;
+                        .gallery-span {
+                            text-transform: uppercase;
+                        }
+                    }
+                    .gallery-button {
+                        width: 130px;
+                        height: 30px;
+                        background-color: @ColorH1;
+                        color: #ffffff;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.14px;
+                        border: none;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    .gallery-button:hover {
+                        background-color: #f40000;
+                    }
+                }
+            }
+            /** testimonial ***/
+            
+            .testimonial {
+                width: 100%;
+                height: 537px;
+                padding: 85px 0 0 0;
+                background-image: url(../img/3.png);
+                .testimonial-h1 {
+                    width: 277px;
+                    height: 39px;
+                    color: #ffffff;
+                    font-family: Poppins;
+                    font-size: 48px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+            }
+            
+            .testimonial-carusel {
+                width: 1160px;
+                height: 240px;
+                margin: 90px auto 0;
+                .quote-mark {
+                    width: 45px;
+                    height: 38px;
+                    margin: 0 auto 51px;
+                    background-image: url(../img/icon_2.png);
+                }
+                .testimonial-p {
+                    width: 935px;
+                    height: 130px;
+                    color: #ffffff;
+                    font-family: "Roboto Condensed";
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .testimonial-sign {
+                    margin: 0 auto;
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                .testimonial-sign span {
+                    font-family: "Roboto - Bold Condensed";
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .arrow_carusel {
+                    width: 37px;
+                    height: 37px;
+                    outline: 1px solid white;
+                }
+                .fa-chevron-left {
+                    margin: 8px 0 0 2px;
+                }
+                .fa-chevron-right {
+                    margin: 8px 0 0 5px;
+                }
+                .arrow_carusel a:hover i {
+                    opacity: 0.5;
+                }
+            }
+            /*** news ***/
+            
+            .news {
+                width: 1200px;
+                height: 790px;
+                padding: 92px 0 0 0;
+                margin: 0 auto;
+                .news-h1 {
+                    color: @ColorH1;
+                    width: 260px;
+                    height: 36px;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    margin: 0 auto 102px;
+                }
+                .news-h2 {
+                    width: 200px;
+                    height: 24px;
+                    color: #000000;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 48px;
+                }
+                .event {
+                    width: 480px;
+                    height: 140px;
+                    margin: 32px 0 10px 10px;
+                    .date {
+                        width: 98px;
+                        height: 139px;
+                        border: 1px solid #e8e8e8;
+                        background-color: #f7f7f7;
+                        border-radius: 49px;
+                        -moz-border-radius: 49px;
+                        -webkit-border-radius: 49px;
+                        -khtml-border-radius: 49px;
+                        float: left;
+                        .day {
+                            width: 24px;
+                            height: 29px;
+                            color: #000000;
+                            font-family: Poppins;
+                            font-size: 32px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            margin: 32px 0 0 31px;
+                        }
+                        .month {
+                            width: 34px;
+                            height: 28px;
+                            color: #9e9e9e;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            margin: 0 auto;
+                        }
+                        .year {
+                            width: 28px;
+                            height: 18px;
+                            color: #9e9e9e;
+                            font-family: "Poppins - Medium Italic";
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            margin: 0 auto;
+                        }
+                    }
+                    .event-content {
+                        width: 308px;
+                        height: 139px;
+                        float: right;
+                    }
+                    .news-h3 a {
+                        width: 200px;
+                        height: 16px;
+                        color: @ColorH1;
+                        font-family: "Roboto Condensed";
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 48px;
+                        margin: 0 0 43px 0;
+                        text-decoration: none;
+                    }
+                    .news-h3 a:hover {
+                        text-decoration: none;
+                        color: #9e9e9e;
+                    }
+                    .news-p {
+                        width: 308px;
+                        height: 50px;
+                        color: #9e9e9e;
+                        font-family: "Roboto Condensed";
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+                }
+                .feature-menu {
+                    width: 570px;
+                    height: 50px;
+                    border-bottom: 1px solid #9e9e9e;
+                    .news-arrows {
+                        width: 50px;
+                        height: 35px;
+                    }
+                    .news-arrow {
+                        width: 18px;
+                        height: 35px;
+                        color: #000000;
+                        font-family: Poppins;
+                        font-size: 34px;
+                        font-weight: 500;
+                        line-height: 28px;
+                        display: inline;
+                    }
+                }
+            }
+            
+            #accordionExample {
+                margin: 34px 0 0 0;
+            }
+            
+            .mb-0 {
+                text-decoration: none;
+                width: 263px;
+                height: 27px;
+                color: #000000;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 20px;
+            }
+            
+            .card button {
+                color: #000000;
+                font-family: "Roboto Condensed";
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 18px;
+            }
+            
+            .btn-link:hover {
+                color: black;
+                text-decoration: underline;
+                background-color: white;
+                border-color: transparent;
+            }
+            
+            .card-body {
+                width: 568px;
+                height: 110px;
+                color: #505050;
+                font-family: "Roboto Condensed";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                background-color: #f5f5f5;
+            }
+            
+            #headingOne,
+            #headingTwo,
+            #headingThree {
+                background-color: white;
+            }
+            
+            .btn-link:hover {
+                color: red;
+            }
+            
+            .news-img {
+                width: 570px;
+                height: 120px;
+                margin: 48px auto;
+                .news-img1 {
+                    width: 190px;
+                    height: 100%;
+                    background-image: url(../img/g7.png);
+                    float: left
+                }
+                .news-img2 {
+                    width: 190px;
+                    height: 100%;
+                    background-image: url(../img/g9.png);
+                    float: left
+                }
+                .news-img3 {
+                    width: 190px;
+                    height: 100%;
+                    background-image: url(../img/g3.png);
+                    float: right;
+                }
+            }
+            
+            .team {
+                width: 100%;
+                height: 785px;
+                background-color: #f7f7f7;
+                padding: 100px 0 0 0;
+                .team-h1 {
+                    width: 177px;
+                    height: 36px;
+                    color: #f44336;
+                    font-family: "Poppins - Semi Bold";
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+                .team-gallery {
+                    width: 1170px;
+                    height: 510px;
+                    margin: 60px auto;
+                    .team-gallery-content {
+                        height: 510px;
+                        .team-gallery-img {
+                            width: 270px;
+                            height: 405px;
+                        }
+                        .gallery-img1 {
+                            background-image: url(../img/t1.png);
+                        }
+                        .gallery-img2 {
+                            background-image: url(../img/t2.png);
+                        }
+                        .gallery-img3 {
+                            background-image: url(../img/t3.png);
+                        }
+                        .gallery-img4 {
+                            background-image: url(../img/t4.png);
+                        }
+                        .team-gallery-h2 {
+                            width: 270px;
+                            height: 40px;
+                            color: #f44336;
+                            font-family: Poppins;
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 48px;
+                        }
+                        .team-gallery-h3 {
+                            width: 270px;
+                            height: 16px;
+                            color: #838383;
+                            font-family: "Roboto Condensed";
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 16px;
+                        }
+                        .team-social {
+                            width: 171px;
+                            height: 30px;
+                            .team-social-icon1 {
+                                height: 30px;
+                                width: 30px;
+                            }
+                            .social-icon1 {
+                                background: url(../img/facebook-team.png) no-repeat 10px 7px;
+                            }
+                            .social-icon2 {
+                                background: url(../img/twitter-team.png) no-repeat 9px 8px;
+                            }
+                            .social-icon3 {
+                                background: url(../img/rss-team.png) no-repeat 8px 7px;
+                            }
+                            .social-icon4 {
+                                background: url(../img/vk-team.png) no-repeat 6px 10px;
+                            }
+                            .social-icon {
+                                height: 30px;
+                                width: 30px;
+                                outline: 2px solid #000000;
+                                display: block;
+                            }
+                            .social-icon:hover {
+                                opacity: 0.5;
+                            }
+                        }
+                    }
                 }
             }
